@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d -p 3001:3001 --name -ci-cd-container ci-cd-node-app'
+                bat 'docker run -d -p 3001:3001 --name ci-cd-container ci-cd-node-app'
             }
         }
     }
